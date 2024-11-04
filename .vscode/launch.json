@@ -2,13 +2,22 @@
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "open home.htm",
-            "file": "home.html"
-        }
-    ]
-}
+    {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "type": "node",
+                "request": "launch",
+                "name": "Launch Express Server",
+                "program": "${workspaceFolder}/app.js",  // Point to your main Express app file
+                "outFiles": [
+                    "${workspaceFolder}/**/*.js"
+                ],
+                "env": {
+                    "PORT": "3000"  // You can set the port here if needed
+                },
+                "console": "integratedTerminal"  // Use the integrated terminal for output
+            }
+        ]
+    }
+    
