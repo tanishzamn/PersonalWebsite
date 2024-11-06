@@ -24,13 +24,14 @@
     <p>Here you can showcase your Python projects or provide links to download them.</p>
 
     <% projects.forEach(project => { %>
-        <section>
-            <h2><%= project.name %></h2>
-            <pre><code class="python"><%= project.code %></code></pre>
-            <a href="/files/<%= project.script %>" download="<%= project.name %>">Download <%= project.name %> Script</a>
-
-        </section>
-    <% }) %>
+      <section>
+          <h2><%= project.name %></h2>
+          <p><%= project.description %></p>
+          <a href="/files/<%= project.script %>" download="<%= project.name %>">Download <%= project.name %> Script</a>
+      </section>
+  <% }) %>
+  
+ 
 
     <footer>
         <p>&copy; 2024 by Tanisha Zaman</p>
