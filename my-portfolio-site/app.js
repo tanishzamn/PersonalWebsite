@@ -60,7 +60,7 @@ app.use(function(err, req, res, next) {
 });
 
 // Start the server
-var PORT = process.env.PORT || 3052;
+var PORT = process.env.PORT || 3055;
 app.listen(PORT, function() {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
