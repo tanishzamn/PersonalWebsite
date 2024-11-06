@@ -8,21 +8,21 @@
     <title><%= title %></title> 
 </head>
 <body style="text-align: center;">
-    <div class="tab-container">
-        <input type="checkbox" id="toggle" class="toggle-input">
-        <label for="toggle" class="toggle-label">☰ Menu</label>
-        <nav id="tab-content" class="tab-content">
-            <h4>
-                <a href="/home">Home</a>
-                <a href="/about">About Me</a>
-                <a href="/contact">Contact</a>
-                <a href="/projects">Projects</a>
-            </h4>
-        </nav>
-    </div>
-    <h1><%= title %></h1>
+    <div id="wrapper">
 
-    <p>Here you can showcase your Python projects or provide links to download them.</p>
+        <div class="tab-container">
+            <input type="checkbox" id="toggle" class="toggle-input">
+            <label for="toggle" class="toggle-label">☰ Menu</label>
+            <nav id="tab-content" class="tab-content">
+                <h4>
+                  <a href="/" class="button button-home"><i class="fa-solid fa-house"></i> Home</a>
+                  <a href="/about" class="button button-about"><i class="fa-regular fa-user"></i> About Me</a>
+                  <a href="/projects" class="button button-projects"><i class="fa-solid fa-code"></i> Projects</a>
+                  <a href="/contact" class="button button-contact"><i class="fa-regular fa-address-book"></i> Contact Me</a>
+              </h4>
+            </nav>
+        </div>
+    <h1><%= title %></h1>
 
     <% projects.forEach(project => { %>
       <section>
