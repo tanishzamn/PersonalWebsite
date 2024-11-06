@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/stylesheets/style.css">
-  <title><%= title %></title> <!-- Dynamic title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css"> 
+    <link rel="stylesheet" href="/stylesheets/gui.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css">
+    <title><%= title %></title> 
 </head>
-
 <body>
-  <div id="wrapper"> <!-- Moved wrapper to encompass the whole body -->
-    <div class="tab-container">
-      <input type="checkbox" id="toggle" class="toggle-input">
-      <label for="toggle" class="toggle-label">☰ Menu</label>
-      <nav id="tab-content" class="tab-content">
-        <h4>
-          <a href="/">Home</a>
-          <a href="/about">About Me</a>
-          <a href="/contact">Contact</a>
-          <a href="/projects">Projects</a>
-        </h4>
-      </nav>
-    </div>
+    <div id="wrapper">
+
+        <div class="tab-container">
+            <input type="checkbox" id="toggle" class="toggle-input">
+            <label for="toggle" class="toggle-label">☰ Menu</label>
+            <nav id="tab-content" class="tab-content">
+                <h4>
+                  <a href="/" class="button button-home"><i class="fa-solid fa-house"></i> Home</a>
+                  <a href="/about" class="button button-about"><i class="fa-regular fa-user"></i> About Me</a>
+                  <a href="/projects" class="button button-projects"><i class="fa-solid fa-code"></i> Projects</a>
+                  <a href="/contact" class="button button-contact"><i class="fa-regular fa-address-book"></i> Contact Me</a>
+              </h4>
+            </nav>
+        </div>
+
     
     <header>
       <h1>This Is Me!</h1>
+      <img src="/images/me_bitmoji.jpeg" alt="Picture of Tanisha" width="350" height="600">
+
+      <h3>
+        Hi, my name is Tanisha Zaman!
+
+        I’m currently a second-year student at Ontario Tech, studying Networking and IT Security. I aspire to become a Network Security Analyst, inspired by my dad, and I’m excited to work towards that goal.
+
+        In my spare time, I enjoy knitting, playing video games, and coding. I have some experience with Python, and this year I’m diving into HTML, CSS, and JavaScript, which has been a lot of fun!
+
+        This summer, I worked at a garden center, which sparked my interest in gardening. Now, I love spending time with plants!
+
+        So, that’s a little bit about me!
+      </h3>
     </header>
     
     <article>
-      <video width="900" height="700" controls preload="auto" loop muted>
-        <source src="/Tanisha_Introduction.mp4" type="video/mp4">
-        Your browser does not support the video tag. <!-- Accessibility message -->
-      </video>
+      
     </article>
   </div>
 
@@ -38,10 +52,10 @@
     <p>&copy; 2024 by Tanisha Zaman</p>
     <nav>
       <div class="footer-links">
-        <a href="/">Home</a>
-        <a href="/about">About Me</a>
-        <a href="/contact">Contact</a>
-        <a href="/projects">Projects</a>
+        <a href="/" class="button button-home">Home</a>
+        <a href="/about" class="button button-about">About Me</a>
+        <a href="/contact" class="button button-contact">Contact</a>
+        <a href="/projects" class="button button-projects">Projects</a>
       </div>
     </nav>
   </footer>

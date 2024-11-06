@@ -1,0 +1,52 @@
+/* gui.css */
+
+/* General button styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 30px; /* Rounded corners */
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFFFFF; /* White text color */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+/* Button colors */
+.button-about {
+    background-color: #A6B9F1; /* Light pastel blue */
+}
+
+.button-projects {
+    background-color: #E1A3E1; /* Soft pastel purple */
+}
+
+.button-contact {
+    background-color: #F4A6C9; /* Light pink */
+}
+
+.button-home {
+    background-color: #B3D7FF; /* Light sky blue */
+}
+
+/* Hover effects */
+.button:hover {
+    transform: translateY(-3px); /* Slight lift on hover */
+    opacity: 0.9; /* Slightly fade */
+}
+
+.button-about:hover {
+    background-color: #7B99D3; /* Brighter blue on hover */
+}
+
+.button-projects:hover {
+    background-color: #D084D6; /* Brighter purple on hover */
+}
+
+.button-contact:hover {
+    background-color: #E879A6; /* Brighter pink on hover */
+}
+
+.button-home:hover {
+    background-color: #99CFFF; /* Brighter sky blue on hover */
+}
