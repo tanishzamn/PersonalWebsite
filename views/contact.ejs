@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css"> 
+    <link rel="stylesheet" href="/stylesheets/gui.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css">
+    <title><%= title %></title> 
+</head>
+<body>
+  <div id="wrapper">
+
+    <div class="tab-container">
+        <input type="checkbox" id="toggle" class="toggle-input">
+        <label for="toggle" class="toggle-label">☰ Menu</label>
+        <nav id="tab-content" class="tab-content">
+            <h4>
+              <a href="/" class="button button-home"><i class="fa-solid fa-house"></i> Home</a>
+              <a href="/about" class="button button-about"><i class="fa-regular fa-user"></i> About Me</a>
+              <a href="/projects" class="button button-projects"><i class="fa-solid fa-code"></i> Projects</a>
+              <a href="/contact" class="button button-contact"><i class="fa-regular fa-address-book"></i> Contact Me</a>
+          </h4>
+        </nav>
+    </div>
+
+    <h1>Send me your questions, comments, or queries!</h1>
+    
+    <form action="mailto:tanisha.zaman@ontariotechu.net" enctype="text/plain" method="post">
+      <p>
+        <label for="name">Your Name:</label><br>
+        <input type="text" name="name" size="60" placeholder="Enter your name" required>
+      </p>    
+      <p>
+        <label for="email">Your Email:</label><br>
+        <input type="email" name="email" size="60" placeholder="Enter your email" required>
+      </p>
+      <p>
+        <label for="phone">Your Phone Number:</label><br>
+        <input type="tel" name="phone" size="60" placeholder="Enter your phone number" required pattern="[0-9]{10}">
+      </p>
+      <p>
+        <label for="comment">Comments:</label><br>
+        <textarea name="comment" cols="60" rows="8" placeholder="Type something..." required></textarea>
+      </p>
+      <input type="reset" value="Reset">
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 by Tanisha Zaman</p>
+    <nav>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/about">About Me</a>
+        <a href="/contact">Contact</a>
+        <a href="/projects">Projects</a>
+      </div>
+    </nav>
+  </footer>
+</body>
+</html>
