@@ -33,10 +33,12 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-module.exports = app;
-
 // Start the server if this file is run directly
-var PORT = process.env.PORT || 3051;
+var PORT = process.env.PORT || 3052;
 app.listen(PORT, function() {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
+
+
+module.exports = app;
+
