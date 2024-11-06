@@ -8,22 +8,22 @@ app.set('views', path.join(__dirname, 'views'));
 app.use('/files', express.static(path.join(__dirname, 'public', 'scripts')));
 
 // Home Page
-app.get('/', function(req, res) { 
+app.get('/', function(req, res, next) { 
     res.render('home', { title: 'Home' }); 
 });
 
 // About Me Page
-app.get('/about', function(req, res) { 
+app.get('/about', function(req, res, next) { 
     res.render('about', { title: 'About Me' }); 
 });
 
 // Contact Me Page
-app.get('/contact', function(req, res) { 
+app.get('/contact', function(req, res, next) { 
     res.render('contact', { title: 'Contact Me' }); 
 });
 
 // Projects Page
-app.get('/projects', (req, res) => {
+app.get('/projects', (req, res, next) => {
     const projects = [
         {
             name: 'Guess the Number',
